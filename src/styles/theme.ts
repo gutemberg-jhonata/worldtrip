@@ -16,5 +16,12 @@ export const theme = extendTheme({
     yellow: {
       500: "#FFBA08"
     }
+  },
+  styles: {
+    global: {
+      body: {
+        bg: "gray.100"
+      }
+    }
   }
 })
