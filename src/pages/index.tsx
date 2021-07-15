@@ -1,9 +1,10 @@
 import Head from "next/head"
+
 import { Banner } from "../components/Banner"
 import { Container } from "../components/Container"
-
 import { Header } from "../components/Header"
 import { TravelTypes } from "../components/TravelTypes"
+import { Divider } from "../components/Divider"
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <Container>
         <TravelTypes mt={90} />
       </Container>
+
+      <Divider />
     </>
   )
 }
