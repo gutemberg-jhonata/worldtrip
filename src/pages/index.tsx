@@ -7,6 +7,7 @@ import { Container } from "../components/Container"
 import { Header } from "../components/Header"
 import { TravelTypes } from "../components/TravelTypes"
 import { Divider } from "../components/Divider"
+import { ContinentsSlide } from "../components/ContinentsSlide"
 
 export default function Home() {
   return (
@@ -34,6 +35,8 @@ export default function Home() {
         Vamos nessa?
         <Text>Então escolha seu continente</Text>
       </Heading>
+
+      <ContinentsSlide />
     </>
   )
 }
