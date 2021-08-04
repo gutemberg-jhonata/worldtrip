@@ -8,6 +8,11 @@
     filter: brightness(0.5);
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #ffba08;
+  }
+
   .swiper-pagination-bullet {
     background: #999999;
     opacity: 1;
