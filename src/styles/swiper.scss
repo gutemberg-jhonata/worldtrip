@@ -7,4 +7,13 @@
     height: 100%;
     filter: brightness(0.5);
   }
+
+  .swiper-pagination-bullet {
+    background: #999999;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ffba08;
+  }
 }
