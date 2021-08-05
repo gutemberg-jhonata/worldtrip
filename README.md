@@ -30,10 +30,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - NextJS
 - Chakra UI
 - Swiper
+- SASS
+- JSON Server
 
 ## 🚀 Uso
 
-```bash 
+```bash
 git clone https://github.com/gutemberg-jhonata/worldtrip.git
 cd worldtrip
 yarn dev
@@ -45,7 +47,7 @@ O worldtrip é um site de viagens desenvolvido durante o bootcamp Ignite, na tri
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/t2DnkTLkrohtVowAfkOH2r/Desafio-1-M%C3%B3dulo-4-ReactJS-(Copy)?node-id=0%3A1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](<https://www.figma.com/file/t2DnkTLkrohtVowAfkOH2r/Desafio-1-M%C3%B3dulo-4-ReactJS-(Copy)?node-id=0%3A1>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
