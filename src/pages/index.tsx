@@ -2,14 +2,27 @@ import Head from "next/head"
 
 import { Heading, Text } from "@chakra-ui/react"
 
+import { api } from "../services/api"
+
 import { Banner } from "../components/Banner"
 import { Container } from "../components/Container"
 import { Header } from "../components/Header"
 import { TravelTypes } from "../components/TravelTypes"
 import { Divider } from "../components/Divider"
 import { ContinentsSlide } from "../components/ContinentsSlide"
+import { GetStaticProps } from "next"
 
-export default function Home() {
+type Continent = {
+  name: string,
+  description: string,
+  image: string
+}
+
+type HomeProps = {
+  continents: Continent[]
+}
+
+export default function Home({ continents }: HomeProps) {
   return (
     <>
       <Head>
@@ -36,7 +49,18 @@ export default function Home() {
         <Text>Então escolha seu continente</Text>
       </Heading>
 
-      <ContinentsSlide />
+      <ContinentsSlide continents={continents} />
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const continents = await api.get("/continents");
+
+  return {
+    props: {
+      continents: continents.data
+    },
+    revalidate: 24 * 60 * 60 // 24 horas
+  }
 }
