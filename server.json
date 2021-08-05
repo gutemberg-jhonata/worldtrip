@@ -1,0 +1,34 @@
+{
+  "continents": [
+    {
+      "name": "Europa", 
+      "description": "O continente mais antigo.", 
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+    },
+    {
+      "name": "América do Norte",
+      "description": "O continente onde se localiza a maior ilha do mundo - a Groelândia",
+      "image": "https://images.unsplash.com/photo-1550850839-8dc894ed385a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=754&q=80"
+    },
+    {
+      "name": "América do Sul",
+      "description": "O continente com a maior região de biodiversidade do mundo",
+      "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "name": "Ásia",
+      "description": "O maior dos continentes.",
+      "image": "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=726&q=80"
+    },
+    {
+      "name": "África",
+      "description": "O continente mais quente.",
+      "image": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+    },
+    {
+      "name": "Oceania",
+      "description": "O continente das ilhas.",
+      "image": "https://images.unsplash.com/photo-1588001400947-6385aef4ab0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
+    }
+  ]
+}
