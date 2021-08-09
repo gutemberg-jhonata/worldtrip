@@ -4,9 +4,11 @@ import SwiperCore, { Pagination, Navigation } from "swiper/core";
 SwiperCore.use([Pagination, Navigation])
 
 import { Flex, Heading, Text, Image } from "@chakra-ui/react"
+import Link from "next/link";
 
 type Continent = {
   name: string,
+  slug: string,
   description: string,
   image: string
 }
@@ -26,7 +28,7 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
     >
       {continents.map(continent => {
         return (
-          <SwiperSlide key={continent.name}>
+          <SwiperSlide key={continent.slug}>
             <Flex
               w="100%"
               h="100%"
@@ -36,7 +38,16 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
               justify="center"
               align="center"
             >
-              <Heading color="gray.100" fontSize="5xl">{continent.name}</Heading>
+              <Link href={`/continent/${continent.slug}`}>
+                <Heading
+                  color="gray.100"
+                  fontSize="5xl"
+                  transition="color 0.2s"
+                  _hover={{ color: "yellow.500", cursor: "pointer" }}
+                >
+                  {continent.name}
+                </Heading>
+              </Link>
               <Text color="gray.200" fontSize="2xl">{continent.description}</Text>
             </Flex>
             <Image src={continent.image} />
