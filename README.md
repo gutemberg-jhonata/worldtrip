@@ -38,6 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```bash
 git clone https://github.com/gutemberg-jhonata/worldtrip.git
 cd worldtrip
+yarn server
 yarn dev
 ```
 
