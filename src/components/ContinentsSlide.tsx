@@ -26,7 +26,7 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
     >
       {continents.map(continent => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={continent.name}>
             <Flex
               w="100%"
               h="100%"
