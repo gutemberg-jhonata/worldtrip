@@ -1,6 +1,6 @@
 import { Flex, Image as ChakraImage, Heading } from "@chakra-ui/react";
 
-export default function ContinentBanner() {
+export function ContinentBanner() {
   return (
     <Flex
       w="100%"
