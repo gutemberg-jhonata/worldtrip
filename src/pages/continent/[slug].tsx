@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-import { HStack, Text } from "@chakra-ui/react"
+import { Heading, HStack, Text } from "@chakra-ui/react"
 
 import { ContinentBanner } from "../../components/ContinentBanner"
 import { Header } from "../../components/Header"
@@ -25,6 +25,8 @@ export default function Continent() {
           </Text>
           <ContinentInfo />
         </HStack>
+
+        <Heading fontSize="4xl" mt="20" mb="10">Cidades +100</Heading>
       </Container>
     </>
   )
