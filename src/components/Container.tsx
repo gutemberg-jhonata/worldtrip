@@ -8,7 +8,7 @@ type ContainerProps = {
 
 export function Container({ children }: ContainerProps) {
   return (
-    <Box px={140}>
+    <Box m="0 auto" px="2" w="100%" maxW="1160px">
       {children}
     </Box>
   )
