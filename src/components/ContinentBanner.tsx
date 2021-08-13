@@ -1,5 +1,7 @@
 import { Flex, Image as ChakraImage, Heading } from "@chakra-ui/react";
 
+import { Container } from "./Container";
+
 export function ContinentBanner() {
   return (
     <Flex
@@ -12,19 +14,20 @@ export function ContinentBanner() {
         w="100%"
         h="100%"
         maxW="1440px"
-        px="4"
         align="flex-end"
         position="absolute"
         zIndex="1"
       >
-        <Heading
-          mb={14}
-          color="gray.100"
-          fontWeight="semibold"
-          fontSize="5xl"
-        >
-          Europa
-        </Heading>
+        <Container>
+          <Heading
+            mb={14}
+            color="gray.100"
+            fontWeight="semibold"
+            fontSize="5xl"
+          >
+            Europa
+          </Heading>
+        </Container>
       </Flex>
 
       <ChakraImage
