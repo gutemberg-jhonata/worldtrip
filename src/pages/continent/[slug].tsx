@@ -19,7 +19,7 @@ export default function Continent() {
       <ContinentBanner />
 
       <Container>
-        <HStack spacing="16" mt="20">
+        <HStack spacing="16" mt="20" justify="space-between">
           <Text fontSize="2xl" w="50%" textAlign="justify">
             A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
           </Text>
