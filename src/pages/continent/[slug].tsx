@@ -6,6 +6,7 @@ import { ContinentBanner } from "../../components/ContinentBanner"
 import { Header } from "../../components/Header"
 import { Container } from "../../components/Container"
 import { ContinentInfo } from "../../components/ContinentInfo"
+import { Cities } from "../../components/Cities"
 
 export default function Continent() {
   return (
@@ -27,6 +28,7 @@ export default function Continent() {
         </HStack>
 
         <Heading fontSize="4xl" mt="20" mb="10">Cidades +100</Heading>
+        <Cities />
       </Container>
     </>
   )
