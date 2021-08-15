@@ -10,7 +10,7 @@ type Continent = {
   name: string,
   slug: string,
   description: string,
-  image: string
+  firstImage: string
 }
 
 type ContinentsSlideProps = {
@@ -50,7 +50,7 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
               </Link>
               <Text color="gray.200" fontSize="2xl">{continent.description}</Text>
             </Flex>
-            <Image src={continent.image} />
+            <Image src={continent.firstImage} />
           </SwiperSlide>
         )
       })}

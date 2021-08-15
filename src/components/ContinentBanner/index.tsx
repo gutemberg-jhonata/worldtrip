@@ -2,7 +2,12 @@ import { Flex, Image as ChakraImage, Heading } from "@chakra-ui/react";
 
 import { Wrapper } from "../Wrapper";
 
-export function ContinentBanner() {
+type ContinentBannerProps = {
+  image: string,
+  children: string
+}
+
+export function ContinentBanner({ image, children }: ContinentBannerProps) {
   return (
     <Flex
       w="100%"
@@ -25,7 +30,7 @@ export function ContinentBanner() {
             fontWeight="semibold"
             fontSize="5xl"
           >
-            Europa
+            {children}
           </Heading>
         </Wrapper>
       </Flex>
@@ -34,7 +39,7 @@ export function ContinentBanner() {
         w="100%"
         objectFit="cover"
         filter="brightness(0.7)"
-        src={`https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80`}
+        src={image}
       />
     </Flex>
   )

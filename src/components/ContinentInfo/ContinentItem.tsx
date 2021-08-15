@@ -1,11 +1,11 @@
 import { Box, Heading, Text } from "@chakra-ui/react"
 
 type ContinentItemProps = {
-  value: string,
-  name: string
+  value: number,
+  children: string
 }
 
-export function ContinentItem({ value, name }: ContinentItemProps) {
+export function ContinentItem({ value, children }: ContinentItemProps) {
   return (
     <Box>
       <Heading
@@ -21,7 +21,7 @@ export function ContinentItem({ value, name }: ContinentItemProps) {
         fontSize="2xl"
         color="gray.600"
       >
-        {name}
+        {children}
       </Text>
     </Box>
   )

@@ -7,24 +7,52 @@ import { Header } from "../../components/Header"
 import { Wrapper } from "../../components/Wrapper"
 import { ContinentInfo } from "../../components/ContinentInfo"
 import { Cities } from "../../components/Cities"
+import { GetStaticPaths, GetStaticProps } from "next"
 
-export default function Continent() {
+import { api } from "../../services/api"
+
+type Info = {
+  countries: number,
+  languages: number,
+  cities: number
+}
+
+type Country = {
+  name: string,
+  flag: string
+}
+
+type City = {
+  name: string,
+  country: Country
+}
+
+type ContinentProps = {
+  name: string,
+  secondImage: string,
+  bio: string,
+  info: Info,
+  moreVisitedCities: City[]
+}
+
+export default function Continent({ name, secondImage, bio, info, moreVisitedCities }: ContinentProps) {
   return (
     <>
       <Head>
-        <title>Continent | worldtrip</title>
+        <title>{name} | worldtrip</title>
       </Head>
 
       <Header />
 
-      <ContinentBanner />
+      <ContinentBanner image={secondImage}>{name}</ContinentBanner>
 
       <Wrapper>
         <HStack spacing="16" mt="20" justify="space-between">
           <Text fontSize="2xl" w="50%" textAlign="justify">
-            A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
+            {bio}
           </Text>
-          <ContinentInfo />
+
+          <ContinentInfo {...info} />
         </HStack>
 
         <Heading
@@ -37,8 +65,35 @@ export default function Continent() {
           Cidades +100
         </Heading>
 
-        <Cities />
+        <Cities values={moreVisitedCities} />
       </Wrapper>
     </>
   )
+}
+
+export const getStaticPaths: GetStaticPaths = () => {
+  return {
+    paths: [],
+    fallback: true
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { slug } = context.params
+
+  const response = await api.get(`/continents?slug=${slug}`)
+  const continent = response.data[0]
+
+  if (!continent) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false
+      }
+    }
+  }
+
+  return {
+    props: continent
+  }
 }
