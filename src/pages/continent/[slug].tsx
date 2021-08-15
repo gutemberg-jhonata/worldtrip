@@ -27,7 +27,16 @@ export default function Continent() {
           <ContinentInfo />
         </HStack>
 
-        <Heading fontSize="4xl" mt="20" mb="10">Cidades +100</Heading>
+        <Heading
+          fontSize="4xl"
+          mt="20"
+          mb="10"
+          color="gray.600"
+          fontWeight="medium"
+        >
+          Cidades +100
+        </Heading>
+
         <Cities />
       </Container>
     </>
