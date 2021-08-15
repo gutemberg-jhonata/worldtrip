@@ -5,7 +5,7 @@ import { Heading, Text } from "@chakra-ui/react"
 import { api } from "../services/api"
 
 import { Banner } from "../components/Banner"
-import { Container } from "../components/Container"
+import { Wrapper } from "../components/Wrapper"
 import { Header } from "../components/Header"
 import { TravelTypes } from "../components/TravelTypes"
 import { Divider } from "../components/Divider"
@@ -33,9 +33,9 @@ export default function Home({ continents }: HomeProps) {
       <Header />
       <Banner />
 
-      <Container>
+      <Wrapper>
         <TravelTypes mt={90} />
-      </Container>
+      </Wrapper>
 
       <Divider />
 
