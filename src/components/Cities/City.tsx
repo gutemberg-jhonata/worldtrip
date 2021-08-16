@@ -16,7 +16,6 @@ export function City({ name, image, country }: CityProps) {
     <Box
       w="256px"
       bgColor="white"
-      mb="12"
     >
       <Image
         overflow="hidden"

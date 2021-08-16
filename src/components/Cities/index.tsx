@@ -1,4 +1,5 @@
-import { Box, Flex, Text, Image } from "@chakra-ui/react"
+import { SimpleGrid } from "@chakra-ui/react"
+
 import { City } from "./City"
 
 type Country = {
@@ -18,8 +19,8 @@ type CitiesProps = {
 
 export function Cities({ values }: CitiesProps) {
   return (
-    <>
-      {values && values.map(city => <City {...city} />)}
-    </>
+    <SimpleGrid columns={4} spacingY={12} mb={12}>
+      {values && values.map(city => <City key={city.name} {...city} />)}
+    </SimpleGrid>
   )
 }
