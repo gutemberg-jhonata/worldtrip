@@ -35,7 +35,15 @@ type ContinentProps = {
   moreVisitedCities: City[]
 }
 
-export default function Continent({ name, secondImage, bio, info, moreVisitedCities }: ContinentProps) {
+export default function Continents(
+  {
+    name,
+    secondImage,
+    bio,
+    info,
+    moreVisitedCities
+  }: ContinentProps) {
+
   return (
     <>
       <Head>

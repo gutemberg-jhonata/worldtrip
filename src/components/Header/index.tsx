@@ -14,7 +14,7 @@ export function Header() {
   const path = router.asPath
 
   useEffect(() => {
-    setIsContinentsPage(path.includes('continent'))
+    setIsContinentsPage(path.includes('continents'))
   }, [path])
 
   return (
