@@ -38,7 +38,7 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
               justify="center"
               align="center"
             >
-              <Link href={`/continent/${continent.slug}`}>
+              <Link href={`/continents/${continent.slug}`}>
                 <Heading
                   color="gray.100"
                   fontSize="5xl"
