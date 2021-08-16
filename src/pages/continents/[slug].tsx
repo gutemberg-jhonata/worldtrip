@@ -24,6 +24,7 @@ type Country = {
 
 type City = {
   name: string,
+  image: string,
   country: Country
 }
 
