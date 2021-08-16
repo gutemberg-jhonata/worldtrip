@@ -8,6 +8,7 @@ type Country = {
 
 type CityData = {
   name: string,
+  image: string,
   country: Country
 }
 
@@ -17,6 +18,8 @@ type CitiesProps = {
 
 export function Cities({ values }: CitiesProps) {
   return (
-    <City></City>
+    <>
+      {values && values.map(city => <City {...city} />)}
+    </>
   )
 }

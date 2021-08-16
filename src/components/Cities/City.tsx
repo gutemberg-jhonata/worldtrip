@@ -1,6 +1,17 @@
 import { Box, Flex, Text, Image } from "@chakra-ui/react"
 
-export function City() {
+type Country = {
+  name: string,
+  flag: string
+}
+
+type CityProps = {
+  name: string,
+  image: string,
+  country: Country
+}
+
+export function City({ name, image, country }: CityProps) {
   return (
     <Box
       w="256px"
@@ -10,7 +21,7 @@ export function City() {
       <Image
         overflow="hidden"
         borderTopRadius="md"
-        src={`https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80`}
+        src={image}
         alt="london"
       />
 
@@ -30,13 +41,13 @@ export function City() {
             fontSize="xl"
             color="gray.600"
           >
-            Londres
+            {name}
           </Text>
           <Text
             fontSize="md"
             color="gray.400"
           >
-            Reino Unido
+            {country.name}
           </Text>
         </Box>
 
@@ -45,7 +56,7 @@ export function City() {
           h="30px"
           borderRadius="full"
           objectFit="cover"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png"
+          src={country.flag}
           alt="london"
         />
       </Flex>
