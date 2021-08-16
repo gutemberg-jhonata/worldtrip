@@ -27,7 +27,7 @@ export default function Home({ continents }: HomeProps) {
   return (
     <>
       <Head>
-        <title>Home | worldtrip</title>
+        <title>Início | worldtrip</title>
       </Head>
 
       <Header />
