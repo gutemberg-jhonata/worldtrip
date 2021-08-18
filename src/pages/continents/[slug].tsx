@@ -91,7 +91,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params
 
   const response = await api.get(`/continents?slug=${slug}`)
-  const continent = response.data[0]
+  const [continent] = response.data
 
   if (!continent) {
     return {
