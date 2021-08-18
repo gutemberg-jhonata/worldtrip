@@ -19,7 +19,7 @@ type CitiesProps = {
 
 export function Cities({ values }: CitiesProps) {
   return (
-    <SimpleGrid columns={4} spacingY={12} mb={12}>
+    <SimpleGrid minChildWidth="256px" justifyContent="center" spacingX={8} spacingY={10} mb={12}>
       {values && values.map(city => <City key={city.name} {...city} />)}
     </SimpleGrid>
   )

@@ -14,7 +14,6 @@ type CityProps = {
 export function City({ name, image, country }: CityProps) {
   return (
     <Box
-      w="256px"
       bgColor="white"
     >
       <Image
