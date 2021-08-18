@@ -80,10 +80,20 @@ export default function Continents(
   )
 }
 
-export const getStaticPaths: GetStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  const response = await api.get(`/continents?_limit=3`);
+
+  const paths = response.data.map(continent => {
+    return {
+      params: {
+        slug: continent.slug
+      }
+    }
+  })
+
   return {
-    paths: [],
-    fallback: true
+    paths,
+    fallback: 'blocking'
   }
 }
 
