@@ -1,0 +1,14 @@
+:root {
+  --yellow: #ffba08;
+}
+
+#nprogress {
+  .bar {
+    background: var(--yellow);
+    height: 5px;
+  }
+
+  .peg {
+    box-shadow: 0 0 10px var(--yellow), 0 0 5px var(--yellow);
+  }
+}
