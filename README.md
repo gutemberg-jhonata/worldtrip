@@ -30,6 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - NextJS
 - Chakra UI
 - Swiper
+- NProgress
 - SASS
 - JSON Server
 
