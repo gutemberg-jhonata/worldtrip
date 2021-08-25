@@ -1,11 +1,15 @@
 import Link from "next/link"
+import { useRouter } from "next/dist/client/router"
 
-import { Box, Image, Link as ChakraLink } from "@chakra-ui/react"
+import { useEffect, useState } from "react"
+
+import { Box, Link as ChakraLink } from "@chakra-ui/react"
 import { ChevronLeftIcon } from "@chakra-ui/icons"
 
 import { Wrapper } from "../Wrapper"
-import { useRouter } from "next/dist/client/router"
-import { useEffect, useState } from "react"
+import { Image } from "../ChakraNextImage"
+
+import logoImg from "../../../public/images/logo.svg"
 
 export function Header() {
   const [isContinentsPage, setIsContinentsPage] = useState(false)
@@ -36,7 +40,7 @@ export function Header() {
           </Box>
         )}
 
-        <Image src="/images/logo.svg" alt="worldtrip" />
+        <Image src={logoImg} alt="worldtrip" />
       </Wrapper>
     </Box>
   )
