@@ -1,4 +1,6 @@
-import { Box, Flex, Text, Image } from "@chakra-ui/react"
+import { Box, Flex, Text } from "@chakra-ui/react"
+
+import { Image } from "../../components/ChakraNextImage"
 
 type Country = {
   name: string,
@@ -17,6 +19,9 @@ export function City({ name, image, country }: CityProps) {
       bgColor="white"
     >
       <Image
+        width="256px"
+        height="173px"
+        layout="responsive"
         overflow="hidden"
         borderTopRadius="md"
         src={image}
@@ -49,7 +54,8 @@ export function City({ name, image, country }: CityProps) {
           </Text>
         </Box>
 
-        <Image
+        {/**
+         * <Image
           w="30px"
           h="30px"
           borderRadius="full"
@@ -57,6 +63,7 @@ export function City({ name, image, country }: CityProps) {
           src={country.flag}
           alt="london"
         />
+         */}
       </Flex>
     </Box>
   )
