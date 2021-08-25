@@ -1,16 +1,16 @@
 import Head from "next/head"
+import { GetStaticProps } from "next"
 
 import { Heading, Text } from "@chakra-ui/react"
 
-import { api } from "../services/api"
+import { api } from "@services/api"
 
-import { Banner } from "../components/Banner"
-import { Wrapper } from "../components/Wrapper"
-import { Header } from "../components/Header"
-import { TravelTypes } from "../components/TravelTypes"
-import { Divider } from "../components/Divider"
-import { ContinentsSlide } from "../components/ContinentsSlide"
-import { GetStaticProps } from "next"
+import { Banner } from "@components/Banner"
+import { Wrapper } from "@components/Wrapper"
+import { Header } from "@components/Header"
+import { TravelTypes } from "@components/TravelTypes"
+import { Divider } from "@components/Divider"
+import { ContinentsSlide } from "@components/ContinentsSlide"
 
 type Continent = {
   name: string,

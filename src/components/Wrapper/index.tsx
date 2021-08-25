@@ -1,6 +1,6 @@
-import { Box, BoxProps } from "@chakra-ui/react"
-
 import { ReactNode } from "react"
+
+import { Box, BoxProps } from "@chakra-ui/react"
 
 type WrapperProps = {
   children: ReactNode

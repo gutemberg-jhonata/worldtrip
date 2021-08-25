@@ -1,7 +1,7 @@
-import { Flex, Image as ChakraImage, Heading } from "@chakra-ui/react"
+import { Flex, Heading } from "@chakra-ui/react"
 
-import { Wrapper } from "../Wrapper"
-import { Image } from "../ChakraNextImage"
+import { Wrapper } from "@components/Wrapper"
+import { Image } from "@components/ChakraNextImage"
 
 type ContinentBannerProps = {
   image: string,

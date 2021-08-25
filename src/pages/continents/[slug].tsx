@@ -1,15 +1,15 @@
 import Head from "next/head"
+import { GetStaticPaths, GetStaticProps } from "next"
 
 import { Heading, HStack, Text } from "@chakra-ui/react"
 
-import { ContinentBanner } from "../../components/ContinentBanner"
-import { Header } from "../../components/Header"
-import { Wrapper } from "../../components/Wrapper"
-import { ContinentInfo } from "../../components/ContinentInfo"
-import { Cities } from "../../components/Cities"
-import { GetStaticPaths, GetStaticProps } from "next"
+import { api } from "@services/api"
 
-import { api } from "../../services/api"
+import { ContinentBanner } from "@components/ContinentBanner"
+import { Header } from "@components/Header"
+import { Wrapper } from "@components/Wrapper"
+import { ContinentInfo } from "@components/ContinentInfo"
+import { Cities } from "@components/Cities"
 
 type Info = {
   countries: number,

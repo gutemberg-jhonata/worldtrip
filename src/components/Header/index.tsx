@@ -6,10 +6,10 @@ import { useEffect, useState } from "react"
 import { Box, Link as ChakraLink } from "@chakra-ui/react"
 import { ChevronLeftIcon } from "@chakra-ui/icons"
 
-import { Wrapper } from "../Wrapper"
-import { Image } from "../ChakraNextImage"
+import { Wrapper } from "@components/Wrapper"
+import { Image } from "@components/ChakraNextImage"
 
-import logoImg from "../../../public/images/logo.svg"
+import logoImg from "@images/logo.svg"
 
 export function Header() {
   const [isContinentsPage, setIsContinentsPage] = useState(false)

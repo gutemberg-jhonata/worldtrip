@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react"
 
-import { Image } from "../../components/ChakraNextImage"
+import { Image } from "@components/ChakraNextImage"
 
 type Country = {
   name: string,
