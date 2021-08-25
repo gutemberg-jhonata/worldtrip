@@ -1,4 +1,6 @@
-import { Flex, Image, Text } from "@chakra-ui/react"
+import { Flex, Text } from "@chakra-ui/react"
+
+import { Image } from "@components/ChakraNextImage"
 
 type TravelItemProps = {
   icon: string,
