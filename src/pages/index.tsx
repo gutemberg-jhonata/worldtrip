@@ -35,22 +35,22 @@ export default function Home({ continents }: HomeProps) {
 
       <Wrapper>
         <TravelTypes mt={90} />
+
+        <Divider />
+
+        <Heading
+          mb="14"
+          textAlign="center"
+          fontWeight="medium"
+          fontSize="4xl"
+          color="gray.600"
+        >
+          Vamos nessa?
+          <Text>Então escolha seu continente</Text>
+        </Heading>
+
+        <ContinentsSlide continents={continents} />
       </Wrapper>
-
-      <Divider />
-
-      <Heading
-        mb="14"
-        textAlign="center"
-        fontWeight="medium"
-        fontSize="4xl"
-        color="gray.600"
-      >
-        Vamos nessa?
-        <Text>Então escolha seu continente</Text>
-      </Heading>
-
-      <ContinentsSlide continents={continents} />
     </>
   )
 }
