@@ -1,10 +1,12 @@
+import Link from "next/link";
+import { Flex, Heading, Text, Link as ChakraLink } from "@chakra-ui/react"
+
 import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
 SwiperCore.use([Pagination, Navigation])
 
-import { Flex, Heading, Text, Image } from "@chakra-ui/react"
-import Link from "next/link";
+import { Image } from "@components/ChakraNextImage"
 
 type Continent = {
   name: string,
@@ -39,18 +41,33 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
               align="center"
             >
               <Link href={`/continents/${continent.slug}`}>
-                <Heading
-                  color="gray.100"
-                  fontSize="5xl"
-                  transition="color 0.2s"
-                  _hover={{ color: "yellow.500", cursor: "pointer" }}
+                <ChakraLink
+                  style={{ textDecoration: 'none', textAlign: 'center' }}
                 >
-                  {continent.name}
-                </Heading>
+                  <Heading
+                    color="gray.100"
+                    fontSize="5xl"
+                    transition="color 0.2s"
+                    textDecor="none"
+                    _hover={{ color: "yellow.500", cursor: "pointer" }}
+                  >
+                    {continent.name}
+
+                    <Text
+                      color="gray.200"
+                      fontSize="2xl"
+                      mt={4}
+                    >
+                      {continent.description}
+                    </Text>
+                  </Heading>
+                </ChakraLink>
               </Link>
-              <Text color="gray.200" fontSize="2xl">{continent.description}</Text>
             </Flex>
-            <Image src={continent.firstImage} />
+
+            {continent.firstImage && (
+              <Image layout="fill" src={continent.firstImage} />
+            )}
           </SwiperSlide>
         )
       })}
