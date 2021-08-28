@@ -1,10 +1,11 @@
 import { Box, Flex, Text } from "@chakra-ui/react"
 
 import { Image } from "@components/ChakraNextImage"
+import { CountryFlag } from "./CountryFlag"
 
 type Country = {
   name: string,
-  flag: string
+  code: string
 }
 
 type CityProps = {
@@ -54,16 +55,7 @@ export function City({ name, image, country }: CityProps) {
           </Text>
         </Box>
 
-        {/**
-         * <Image
-          w="30px"
-          h="30px"
-          borderRadius="full"
-          objectFit="cover"
-          src={country.flag}
-          alt="london"
-        />
-         */}
+        <CountryFlag countryCode={country.code} />
       </Flex>
     </Box>
   )

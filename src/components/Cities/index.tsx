@@ -4,7 +4,7 @@ import { City } from "./City"
 
 type Country = {
   name: string,
-  flag: string
+  code: string
 }
 
 type CityData = {

@@ -19,7 +19,7 @@ type Info = {
 
 type Country = {
   name: string,
-  flag: string
+  code: string
 }
 
 type City = {
