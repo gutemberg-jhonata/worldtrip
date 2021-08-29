@@ -7,8 +7,8 @@ export function Divider() {
         borderBottomWidth="2px"
         borderColor="gray.600"
         w="90px"
-        mt="20"
-        mb="14"
+        mt={[9, 12, 20]}
+        mb={[6, 8, 14]}
       />
     </Center>
   )

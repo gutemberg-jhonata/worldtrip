@@ -39,7 +39,7 @@ export default function Home({ continents }: HomeProps) {
         <Divider />
 
         <Heading
-          mb="14"
+          mb={[5, 10, 14]}
           textAlign="center"
           fontWeight="medium"
           fontSize={["xl", "2xl", "4xl"]}
