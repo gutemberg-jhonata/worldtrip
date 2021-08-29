@@ -304,20 +304,36 @@
       "slug": "oceania",
       "description": "O continente das ilhas.",
       "firstImage": "https://images.unsplash.com/photo-1588001400947-6385aef4ab0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
-      "secondImage": "https://images.unsplash.com/photo-1574236170878-f66e35f83207?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-      "bio": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "secondImage": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "bio": "A Oceania é um continente situado entre os oceanos Índico e Pacífico, a sudeste da Ásia. A maior parte de suas terras fica no Hemisfério Sul do planeta. É composto por 14 países e ilhas e territórios pertencentes a outros países, tanto oceânicos quanto de outros continentes. A maior e mais populosa das nações é a Austrália, que consiste também na principal economia do continente. Destaca-se também a Nova Zelândia. No total, o continente possui cerca de 42 milhões de habitantes e apresenta condições bastante contrastantes no que diz respeito aos aspectos socieconômicos de seus países.",
       "info": {
-        "countries": 50,
-        "languages": 2301,
-        "cities": 51
+        "countries": 14,
+        "languages": 30,
+        "cities": 3
       },
       "moreVisitedCities": [
         {
-          "name": "Hong Kong",
-          "image": "https://images.unsplash.com/photo-1532270239525-86620e182354?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80",
+          "name": "Sydney",
+          "image": "https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
           "country": {
-            "name": "China",
-            "code": "CN"
+            "name": "Australia",
+            "code": "AU"
+          }
+        },
+        {
+          "name": "Melbourne",
+          "image": "https://images.unsplash.com/photo-1597200715107-0b30ad4baf36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80",
+          "country": {
+            "name": "Australia",
+            "code": "AU"
+          }
+        },
+        {
+          "name": "Auckland",
+          "image": "https://images.unsplash.com/photo-1613186656609-3b2833008cb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+          "country": {
+            "name": "Nova Zelândia",
+            "code": "NZ"
           }
         }
       ]
