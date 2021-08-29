@@ -15,7 +15,7 @@ export function Banner() {
           fontWeight="medium"
           fontSize="36"
         >
-          5 Continentes,
+          6 Continentes,
           <Text>infinitas possibilidades.</Text>
         </Heading>
         <Text
