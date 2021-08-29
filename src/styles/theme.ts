@@ -6,6 +6,9 @@ export const theme = extendTheme({
     heading: "Poppins, sans-serif",
     barlow: "Barlow, sans-serif "
   },
+  fontWeights: {
+    normal: 500
+  },
   colors: {
     gray: {
       100: "#F5F8FA",
