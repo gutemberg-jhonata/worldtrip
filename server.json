@@ -59,7 +59,96 @@
       "name": "América do Norte",
       "slug": "north-america",
       "description": "O continente onde se localiza a maior ilha do mundo - a Groelândia",
-      "image": "https://images.unsplash.com/photo-1550850839-8dc894ed385a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=754&q=80"
+      "firstImage": "https://images.unsplash.com/photo-1589871090211-7f2efeec05b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "secondImage": "https://images.unsplash.com/photo-1603015245012-68988952fc73?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "bio": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia (pertencente ao Reino da Dinamarca, com representação no parlamento) e Bermudas (dependência britânica).",
+      "info": {
+        "countries": 3,
+        "languages": 6,
+        "cities": 10
+      },
+      "moreVisitedCities": [
+        {
+          "name": "Nova York",
+          "image": "https://images.unsplash.com/photo-1602940659805-770d1b3b9911?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        },
+        {
+          "name": "Miami",
+          "image": "https://images.unsplash.com/photo-1476984251899-8d7fdfc5c92c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        },
+        {
+          "name": "Los Angeles",
+          "image": "https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        },
+        {
+          "name": "Las Vegas",
+          "image": "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        },
+        {
+          "name": "Cancun",
+          "image": "https://images.unsplash.com/photo-1510097467424-192d713fd8b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=949&q=80",
+          "country": {
+            "name": "México",
+            "code": "MX"
+          }
+        },
+        {
+          "name": "Orlando",
+          "image": "https://images.unsplash.com/photo-1575089776834-8be34696ffb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        },
+        {
+          "name": "Toronto",
+          "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "country": {
+            "name": "Canada",
+            "code": "CA"
+          }
+        },
+        {
+          "name": "Vancouver",
+          "image": "https://images.unsplash.com/photo-1606962849307-a6eae721a075?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+          "country": {
+            "name": "Canada",
+            "code": "CA"
+          }
+        },
+        {
+          "name": "São Francisco",
+          "image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        },
+        {
+          "name": "Honolulu",
+          "image": "https://images.unsplash.com/photo-1581720488341-a02fe8d6575d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80",
+          "country": {
+            "name": "USA",
+            "code": "US"
+          }
+        }
+      ]
     },
     {
       "name": "América do Sul",
