@@ -16,11 +16,13 @@ export function ContinentInfo({
 }: ContinentInfoProps) {
 
   const isWideVersion = useBreakpointValue({ base: false, lg: true })
+
   const textAlign = isWideVersion ? "center" : "left"
+  const spacing = isWideVersion ? 10 : 6
 
   return (
     <HStack
-      spacing={10}
+      spacing={spacing}
       justify="space-between"
       textAlign={textAlign}
       {...rest}

@@ -20,7 +20,7 @@ export function ContinentItem({ value, label, children }: ContinentItemProps) {
 
       <Flex alignItems="center">
         <Text
-          fontWeight="semibold"
+          fontWeight={["normal", "semibold"]}
           fontSize={["lg", "xl", "2xl"]}
           color="gray.600"
         >
@@ -29,7 +29,7 @@ export function ContinentItem({ value, label, children }: ContinentItemProps) {
 
         {label && (
           <Tooltip hasArrow label={label} bg="gray.300" color="gray.700">
-            <InfoOutlineIcon ml={2} color="gray.400" />
+            <InfoOutlineIcon ml={2} w={[2.5, 4]} h={[2.5, 4]} color="gray.400" />
           </Tooltip>
         )}
       </Flex>
