@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react"
+import { Flex, Heading, useBreakpointValue } from "@chakra-ui/react"
 
 import { Wrapper } from "@components/Wrapper"
 import { Image } from "@components/ChakraNextImage"
@@ -9,32 +9,33 @@ type ContinentBannerProps = {
 }
 
 export function ContinentBanner({ image, children }: ContinentBannerProps) {
+  const isSmallVersion = useBreakpointValue({ base: true, md: false })
+
   return (
     <Flex
       w="100%"
-      h="500px"
+      h={[36, 52, 80, "500px"]}
       justifyContent="center"
       position="relative"
     >
-      <Flex
-        w="100%"
-        h="100%"
-        maxW="1440px"
-        align="flex-end"
-        position="absolute"
-        zIndex="1"
-      >
-        <Wrapper>
+      <Wrapper>
+        <Flex
+          w="100%"
+          h="100%"
+          align={isSmallVersion ? "center" : "flex-end"}
+          justify={isSmallVersion ? "center" : "flex-start"}
+        >
           <Heading
-            mb={14}
+            mb={isSmallVersion ? 0 : 14}
             color="gray.100"
             fontWeight="semibold"
-            fontSize="5xl"
+            fontSize={["3xl", "4xl", "5xl"]}
+            zIndex="1"
           >
             {children}
           </Heading>
-        </Wrapper>
-      </Flex>
+        </Flex>
+      </Wrapper>
 
       <Image
         layout="fill"
