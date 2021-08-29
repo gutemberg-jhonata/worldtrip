@@ -42,7 +42,7 @@ export default function Home({ continents }: HomeProps) {
           mb="14"
           textAlign="center"
           fontWeight="medium"
-          fontSize="4xl"
+          fontSize={["xl", "2xl", "4xl"]}
           color="gray.600"
         >
           Vamos nessa?
