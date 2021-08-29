@@ -46,7 +46,7 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
                 >
                   <Heading
                     color="gray.100"
-                    fontSize="5xl"
+                    fontSize={["2xl", "3xl", "5xl"]}
                     transition="color 0.2s"
                     textDecor="none"
                     _hover={{ color: "yellow.500", cursor: "pointer" }}
@@ -55,7 +55,7 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
 
                     <Text
                       color="gray.200"
-                      fontSize="2xl"
+                      fontSize={["sm", "xl", "2xl"]}
                       mt={4}
                     >
                       {continent.description}

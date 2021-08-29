@@ -1,6 +1,9 @@
 .mySwiper {
-  margin-bottom: 2.5rem;
-  height: 480px;
+  height: 450px;
+
+  @media (max-width: 480px) {
+    height: 250px;
+  }
 
   img {
     width: 100%;
@@ -13,6 +16,12 @@
   .swiper-button-prev,
   .swiper-button-next {
     color: #ffba08;
+
+    &::after {
+      @media (max-width: 480px) {
+        font-size: 30px;
+      }
+    }
   }
 
   .swiper-pagination-bullet {

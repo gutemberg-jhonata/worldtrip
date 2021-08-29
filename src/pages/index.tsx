@@ -49,6 +49,9 @@ export default function Home({ continents }: HomeProps) {
           <Text>Então escolha seu continente</Text>
         </Heading>
 
+      </Wrapper>
+
+      <Wrapper px={0} mb={[6, 8, 10]}>
         <ContinentsSlide continents={continents} />
       </Wrapper>
     </>
