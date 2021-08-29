@@ -154,7 +154,40 @@
       "name": "América do Sul",
       "slug": "south-america",
       "description": "O continente com a maior região de biodiversidade do mundo",
-      "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+      "firstImage": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "secondImage": "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80",
+      "bio": "Com extensão territorial de 17,8 milhões de quilômetros quadrados, a América do Sul consiste numa subdivisão do continente americano. Os países que integram essa porção continental são: Argentina, Bolívia, Brasil, Chile, Colômbia, Equador, Guiana, Paraguai, Peru, Suriname, Uruguai e Venezuela, além do território da Guiana Francesa.",
+      "info": {
+        "countries": 12,
+        "languages": 9,
+        "cities": 3
+      },
+      "moreVisitedCities": [
+        {
+          "name": "Buenos Aires",
+          "image": "https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "country": {
+            "name": "Argentina",
+            "code": "AR"
+          }
+        },
+        {
+          "name": "Lima",
+          "image": "https://images.unsplash.com/photo-1611874452432-3a267c766bfc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "country": {
+            "name": "Peru",
+            "code": "PE"
+          }
+        },
+        {
+          "name": "Rio de Janeiro",
+          "image": "https://images.unsplash.com/photo-1544989164-22f292ae11b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80",
+          "country": {
+            "name": "Brasil",
+            "code": "BR"
+          }
+        }
+      ]
     },
     {
       "name": "Ásia",
