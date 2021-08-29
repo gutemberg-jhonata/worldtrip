@@ -76,9 +76,9 @@ export default function Continents(
         </Stack>
 
         <Heading
-          fontSize="4xl"
-          mt="20"
-          mb="10"
+          fontSize={["2xl", "3xl", "4xl"]}
+          mt={[8, 12, 20]}
+          mb={[5, 8, 10]}
           color="gray.600"
           fontWeight="medium"
         >
