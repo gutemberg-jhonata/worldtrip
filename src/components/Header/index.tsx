@@ -1,15 +1,14 @@
-import Link from "next/link"
 import { useRouter } from "next/dist/client/router"
 
 import { useEffect, useState } from "react"
 
-import { Box, Link as ChakraLink } from "@chakra-ui/react"
-import { ChevronLeftIcon } from "@chakra-ui/icons"
+import { Box } from "@chakra-ui/react"
 
 import { Wrapper } from "@components/Wrapper"
 import { Image } from "@components/ChakraNextImage"
 
 import logoImg from "@images/logo.svg"
+import { BackNavigation } from "./BackNavigation"
 
 export function Header() {
   const [isContinentsPage, setIsContinentsPage] = useState(false)
@@ -31,13 +30,7 @@ export function Header() {
         position="relative"
       >
         {isContinentsPage && (
-          <Box position="absolute" left="0">
-            <Link href="/">
-              <ChakraLink>
-                <ChevronLeftIcon w="32px" h="32px" color="gray.600" />
-              </ChakraLink>
-            </Link>
-          </Box>
+          <BackNavigation />
         )}
 
         <Box width={[20, 32, 44]} height={[5, 8, 10]}>

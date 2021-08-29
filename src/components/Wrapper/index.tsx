@@ -8,7 +8,7 @@ type WrapperProps = {
 
 export function Wrapper({ children, ...rest }: WrapperProps) {
   return (
-    <Box m="0 auto" px="2" w="100%" maxW="1160px" {...rest}>
+    <Box m="0 auto" px={4} w="100%" maxW="1160px" {...rest}>
       {children}
     </Box>
   )
