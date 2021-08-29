@@ -1,4 +1,4 @@
-import { SimpleGrid } from "@chakra-ui/react"
+import { SimpleGrid, SimpleGridProps } from "@chakra-ui/react"
 
 import { City } from "./City"
 
@@ -15,16 +15,16 @@ type CityData = {
 
 type CitiesProps = {
   values: CityData[]
-}
+} & SimpleGridProps
 
-export function Cities({ values }: CitiesProps) {
+export function Cities({ values, ...rest }: CitiesProps) {
   return (
     <SimpleGrid
       minChildWidth="256px"
       justifyContent="center"
       spacingX={8}
-      spacingY={10}
-      mb={12}
+      spacingY={[5, 8, 10]}
+      {...rest}
     >
       {values && values.map(city => <City key={city.name} {...city} />)}
     </SimpleGrid>

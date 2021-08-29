@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { GetStaticPaths, GetStaticProps } from "next"
 
-import { Heading, Stack, Text, useBreakpointValue } from "@chakra-ui/react"
+import { Box, Heading, Stack, Text, useBreakpointValue } from "@chakra-ui/react"
 
 import { api } from "@services/api"
 
@@ -46,6 +46,7 @@ export default function Continents(
   }: ContinentProps) {
 
   const isWideVersion = useBreakpointValue({ base: false, lg: true })
+  const isMediumVersion = useBreakpointValue({ base: false, md: true })
 
   return (
     <>
@@ -85,7 +86,11 @@ export default function Continents(
           Cidades +100
         </Heading>
 
-        <Cities values={moreVisitedCities} />
+        <Cities
+          mx={isMediumVersion ? 0 : 14}
+          mb={[5, 8, 12]}
+          values={moreVisitedCities}
+        />
       </Wrapper>
     </>
   )
