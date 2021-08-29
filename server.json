@@ -256,13 +256,71 @@
       "name": "África",
       "slug": "africa",
       "description": "O continente mais quente.",
-      "firstImage": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+      "firstImage": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
+      "secondImage": "https://images.unsplash.com/photo-1484318571209-661cf29a69c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "bio": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.",
+      "info": {
+        "countries": 54,
+        "languages": 2000,
+        "cities": 4
+      },
+      "moreVisitedCities": [
+        {
+          "name": "Cairo",
+          "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "country": {
+            "name": "Egito",
+            "code": "EG"
+          }
+        },
+        {
+          "name": "Joanesburgo",
+          "image": "https://images.unsplash.com/photo-1577948000111-9c970dfe3743?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80",
+          "country": {
+            "name": "África do Sul",
+            "code": "ZA"
+          }
+        },
+        {
+          "name": "Marrakech",
+          "image": "https://images.unsplash.com/photo-1545041552-becc2efcccc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+          "country": {
+            "name": "Marrocos",
+            "code": "MA"
+          }
+        },
+        {
+          "name": "Hurgada",
+          "image": "https://images.unsplash.com/photo-1562679300-722c0b24717d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
+          "country": {
+            "name": "Egito",
+            "code": "EG"
+          }
+        }
+      ]
     },
     {
       "name": "Oceania",
       "slug": "oceania",
       "description": "O continente das ilhas.",
-      "firstImage": "https://images.unsplash.com/photo-1588001400947-6385aef4ab0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
+      "firstImage": "https://images.unsplash.com/photo-1588001400947-6385aef4ab0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
+      "secondImage": "https://images.unsplash.com/photo-1574236170878-f66e35f83207?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "bio": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "info": {
+        "countries": 50,
+        "languages": 2301,
+        "cities": 51
+      },
+      "moreVisitedCities": [
+        {
+          "name": "Hong Kong",
+          "image": "https://images.unsplash.com/photo-1532270239525-86620e182354?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80",
+          "country": {
+            "name": "China",
+            "code": "CN"
+          }
+        }
+      ]
     }
   ]
 }
