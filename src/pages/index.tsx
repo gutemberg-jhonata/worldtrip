@@ -34,7 +34,7 @@ export default function Home({ continents }: HomeProps) {
       <Banner />
 
       <Wrapper>
-        <TravelTypes mt={90} />
+        <TravelTypes mt={28} />
 
         <Divider />
 

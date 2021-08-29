@@ -12,7 +12,7 @@ export function Banner() {
   const isWideVersion = useBreakpointValue({ base: false, lg: true })
 
   return (
-    <Box w="100%" h="335px" position="relative">
+    <Box w="100%" py={[7, 10, 20]} position="relative">
       <Image src={bgImg} layout="fill" objectFit="cover" placeholder="blur" />
 
       <Wrapper position="relative" h="100%">
@@ -27,7 +27,7 @@ export function Banner() {
           </Flex>
 
           {isWideVersion && (
-            <Box position="absolute" right={0} bottom="-50px">
+            <Box position="absolute" right={0}>
               <Image src={airplaneImg} alt="Airplane" />
             </Box>
           )}
