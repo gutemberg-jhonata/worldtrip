@@ -22,7 +22,7 @@ export function Header() {
   }, [path])
 
   return (
-    <Box bgColor="white" py="6">
+    <Box bgColor="white" py={[4, 5, 6]}>
       <Wrapper
         display="flex"
         flexDir="row"
@@ -40,7 +40,9 @@ export function Header() {
           </Box>
         )}
 
-        <Image src={logoImg} alt="worldtrip" />
+        <Box width={[20, 32, 44]} height={[5, 8, 10]}>
+          <Image src={logoImg} alt="worldtrip" />
+        </Box>
       </Wrapper>
     </Box>
   )
