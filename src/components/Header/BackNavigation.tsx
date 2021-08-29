@@ -5,7 +5,7 @@ import { ChevronLeftIcon } from "@chakra-ui/icons"
 
 export function BackNavigation() {
   return (
-    <Box position="absolute" left="0">
+    <Box position="absolute" left="16px">
       <Link href="/">
         <ChakraLink>
           <ChevronLeftIcon
