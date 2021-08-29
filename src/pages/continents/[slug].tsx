@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { GetStaticPaths, GetStaticProps } from "next"
 
-import { Heading, HStack, Text } from "@chakra-ui/react"
+import { Heading, Stack, Text, useBreakpointValue } from "@chakra-ui/react"
 
 import { api } from "@services/api"
 
@@ -45,6 +45,8 @@ export default function Continents(
     moreVisitedCities
   }: ContinentProps) {
 
+  const isWideVersion = useBreakpointValue({ base: false, lg: true })
+
   return (
     <>
       <Head>
@@ -56,13 +58,22 @@ export default function Continents(
       <ContinentBanner image={secondImage}>{name}</ContinentBanner>
 
       <Wrapper>
-        <HStack spacing="16" mt="20" justify="space-between">
-          <Text fontSize="2xl" w="50%" textAlign="justify">
+        <Stack
+          direction={isWideVersion ? "row" : "column"}
+          spacing={4}
+          mt={[6, 10, 12, 20]}
+          justify="space-between"
+        >
+          <Text
+            fontSize={["sm", "lg", "2xl"]}
+            w={isWideVersion ? "50%" : "100%"}
+            textAlign="justify"
+          >
             {bio}
           </Text>
 
-          <ContinentInfo {...info} />
-        </HStack>
+          <ContinentInfo mt={4} {...info} />
+        </Stack>
 
         <Heading
           fontSize="4xl"

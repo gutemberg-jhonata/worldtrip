@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react"
+import { HStack, StackProps } from "@chakra-ui/react"
 
 import { ContinentItem } from "./ContinentItem"
 
@@ -6,11 +6,17 @@ type ContinentInfoProps = {
   countries: number,
   languages: number,
   cities: number
-}
+} & StackProps
 
-export function ContinentInfo({ countries, languages, cities }: ContinentInfoProps) {
+export function ContinentInfo({
+  countries,
+  languages,
+  cities,
+  ...rest
+}: ContinentInfoProps) {
+
   return (
-    <HStack spacing="10" textAlign="center">
+    <HStack spacing="10" textAlign="center" {...rest}>
       <ContinentItem value={countries}>países</ContinentItem>
       <ContinentItem value={languages}>línguas</ContinentItem>
       <ContinentItem
