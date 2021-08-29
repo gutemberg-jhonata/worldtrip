@@ -66,7 +66,11 @@ export function ContinentsSlide({ continents }: ContinentsSlideProps) {
             </Flex>
 
             {continent.firstImage && (
-              <Image layout="fill" src={continent.firstImage} />
+              <Image
+                bgColor="gray.200"
+                layout="fill"
+                src={continent.firstImage}
+              />
             )}
           </SwiperSlide>
         )
