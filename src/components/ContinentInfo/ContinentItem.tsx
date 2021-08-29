@@ -12,7 +12,7 @@ export function ContinentItem({ value, label, children }: ContinentItemProps) {
     <Box>
       <Heading
         fontWeight="semibold"
-        fontSize="5xl"
+        fontSize={["2xl", "4xl", "5xl"]}
         color="yellow.500"
       >
         {value}
@@ -21,7 +21,7 @@ export function ContinentItem({ value, label, children }: ContinentItemProps) {
       <Flex alignItems="center">
         <Text
           fontWeight="semibold"
-          fontSize="2xl"
+          fontSize={["lg", "xl", "2xl"]}
           color="gray.600"
         >
           {children}

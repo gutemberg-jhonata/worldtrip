@@ -1,4 +1,4 @@
-import { HStack, StackProps } from "@chakra-ui/react"
+import { HStack, StackProps, useBreakpointValue } from "@chakra-ui/react"
 
 import { ContinentItem } from "./ContinentItem"
 
@@ -15,8 +15,16 @@ export function ContinentInfo({
   ...rest
 }: ContinentInfoProps) {
 
+  const isWideVersion = useBreakpointValue({ base: false, lg: true })
+  const textAlign = isWideVersion ? "center" : "left"
+
   return (
-    <HStack spacing="10" textAlign="center" {...rest}>
+    <HStack
+      spacing={10}
+      justify="space-between"
+      textAlign={textAlign}
+      {...rest}
+    >
       <ContinentItem value={countries}>países</ContinentItem>
       <ContinentItem value={languages}>línguas</ContinentItem>
       <ContinentItem
