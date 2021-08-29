@@ -1,44 +1,38 @@
-import { HStack, Box, Heading, Text, Image } from "@chakra-ui/react";
+import { Box, useBreakpointValue, Flex } from "@chakra-ui/react"
+
+import { Wrapper } from "@components/Wrapper"
+import { Image } from "@components/ChakraNextImage"
+import { Title } from "./Title"
+import { Subtitle } from "./Subtitle"
+
+import bgImg from "@images/background.png"
+import airplaneImg from "@images/airplane.svg"
 
 export function Banner() {
+  const isWideVersion = useBreakpointValue({ base: false, lg: true })
+
   return (
-    <HStack
-      bgImage="/images/background.png"
-      justify="space-between"
-      align="center"
-      px={140}
-      h="335px"
-    >
-      <Box w="100%">
-        <Heading
-          color="gray.100"
-          fontWeight="medium"
-          fontSize="36"
-        >
-          6 Continentes,
-          <Text>infinitas possibilidades.</Text>
-        </Heading>
-        <Text
-          color="gray.200"
-          fontSize="20"
-          mt="4"
-        >
-          Chegou a hora de tirar do papel a viagem que você sempre sonhou.
-        </Text>
-      </Box>
-      <Box
-        w="100%"
-        height="100%"
-        position="relative"
-      >
-        <Image
-          position="absolute"
-          right="0"
-          bottom="-10"
-          src="/images/airplane.svg"
-          alt="Airplane"
-        />
-      </Box>
-    </HStack>
+    <Box w="100%" h="335px" position="relative">
+      <Image src={bgImg} layout="fill" objectFit="cover" placeholder="blur" />
+
+      <Wrapper position="relative" h="100%">
+        <Flex justify="space-between" h="100%" position="relative">
+          <Flex
+            w={isWideVersion ? "50%" : "100%"}
+            justify="center"
+            flexDir="column"
+          >
+            <Title />
+            <Subtitle />
+          </Flex>
+
+          {isWideVersion && (
+            <Box position="absolute" right={0} bottom="-50px">
+              <Image src={airplaneImg} alt="Airplane" />
+            </Box>
+          )}
+        </Flex>
+      </Wrapper>
+    </Box>
   )
 }
