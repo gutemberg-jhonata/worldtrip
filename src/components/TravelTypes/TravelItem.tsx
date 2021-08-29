@@ -22,7 +22,7 @@ export function TravelItem({ icon, children, ...rest }: TravelItemProps) {
   return (
     <Flex align="center" {...rest}>
       <Box w="8px" h="8px" borderRadius="full" bgColor="yellow.500" mr={2} />
-      <Text fontSize="lg" fontWeight="normal" color="gray.600">
+      <Text fontSize="lg" fontWeight="medium" color="gray.600">
         {children}
       </Text>
     </Flex>
