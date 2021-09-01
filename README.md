@@ -31,6 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Chakra UI
 - Swiper
 - NProgress
+- React Country Flag
 - SASS
 - JSON Server
 
