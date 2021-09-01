@@ -19,7 +19,7 @@
 <br>
 
 <p align="center">
-  <img alt="worldtrip" src=".github/worldtrip.png" width="100%">
+  <img alt="worldtrip" src=".github/worldtrip.gif" width="100%">
 </p>
 
 ## 🧪 Tecnologias
